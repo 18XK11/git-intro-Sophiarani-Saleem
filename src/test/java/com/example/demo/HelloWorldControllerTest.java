@@ -22,7 +22,7 @@ public class HelloWorldControllerTest {
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
         .andReturn().getResponse().getContentAsString();
-        assertThat(result).isEqualTo("Hello People");
+        assertThat(result).isEqualTo("Hello people");
     }
 
     @Test
